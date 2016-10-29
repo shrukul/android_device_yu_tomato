@@ -4,7 +4,9 @@ PRODUCT_PACKAGES += \
     imscmlibrary \
     imssettings \
     ims \
-    libvt_jni
+    libvt_jni \
+    libshims_ims \
+    IMSEnabler
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ims/imscm.xml:system/etc/permissions/imscm.xml \

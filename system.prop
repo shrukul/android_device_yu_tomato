@@ -7,3 +7,7 @@ persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
+
+# Media
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
