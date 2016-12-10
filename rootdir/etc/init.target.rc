@@ -46,8 +46,50 @@ on boot
     chown root system /sys/devices/soc.0/78b9000.i2c/i2c-5/5-005d/keypad_enable
     chmod 0660 /sys/devices/soc.0/78b9000.i2c/i2c-5/5-005d/keypad_enable
 
+on init
+    export LD_SHIM_LIBS /system/vendor/lib/lib-imsdpl.so|libshim_boringssl.so
+
 service_redefine config_bt_addr /system/bin/btnvtool -b /system/bin/yl_btmac
     class core
     user bluetooth
     group bluetooth radio
+    oneshot
+
+service imsqmidaemon /system/bin/imsqmidaemon
+    class main
+    user system
+    socket ims_qmid stream 0660 system radio
+    group radio log qcom_diag
+
+service imsdatadaemon /system/bin/imsdatadaemon
+    class main
+    user system
+    socket ims_datad stream 0660 system radio
+    group system wifi radio inet log qcom_diag
+    disabled
+
+on property:sys.ims.QMI_DAEMON_STATUS=1
+    start imsdatadaemon
+
+service ims_rtp_daemon /system/bin/ims_rtp_daemon
+   class main
+   user system
+   socket ims_rtpd stream 0660 system radio
+   group radio diag qcom_diag log inet
+   disabled
+
+service imscmservice /system/bin/imscmservice
+   class main
+   user system
+   group radio diag qcom_diag log
+   disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start ims_rtp_daemon
+    start imscmservice
+
+service qti_ims /system/bin/sh /init.qti.ims.sh
+    class core
+    user radio
+    group radio
     oneshot
