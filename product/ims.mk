@@ -4,7 +4,8 @@ PRODUCT_PACKAGES += \
     init.qti.ims.sh \
     imscmlibrary \
     imssettings \
-    ims
+    ims \
+    libvt_jni
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ims/imscm.xml:system/etc/permissions/imscm.xml \
