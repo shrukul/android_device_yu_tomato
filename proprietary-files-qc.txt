@@ -152,6 +152,7 @@ vendor/lib/libOmxQcelp13Dec.so
 bin/msm_irqbalance
 vendor/bin/perfd
 vendor/lib64/libqti-perfd-client.so
+vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
 bin/mm-pp-daemon
@@ -206,6 +207,7 @@ etc/permissions/qcrilhook.xml
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/lib64/libcneapiclient.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
