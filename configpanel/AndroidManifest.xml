@@ -25,7 +25,7 @@
     <uses-sdk android:minSdkVersion="23" />
 
     <application
-        android:label="@string/device_settings_app_name">
+        android:label="ConfigPanel">
 
         <activity
             android:label="@string/screen_gestures_panel_title"
@@ -44,7 +44,7 @@
 
         <receiver android:name=".Startup" >
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.INITIALIZE_CM_HARDWARE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
     </application>
