@@ -90,7 +90,7 @@ on boot
     chmod 0660 /sys/devices/soc.0/78b9000.i2c/i2c-5/5-005d/keypad_enable
 
 on init
-    export LD_SHIM_LIBS /system/vendor/lib/lib-imsdpl.so|libshim_boringssl.so
+    export LD_SHIM_LIBS /system/vendor/lib/lib-imsdpl.so
 
 service_redefine config_bt_addr /system/bin/btnvtool -b /system/bin/yl_btmac
     class core
