@@ -1,9 +1,6 @@
 # System props for YUREKA/+
 
-ro.product.model=AO5510
-
-# Display
-ro.sf.lcd_density=320
+ro.aex.device=tomato
 
 # USB debugging at boot
 persist.sys.usb.config=mtp,adb
