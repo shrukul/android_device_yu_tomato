@@ -275,6 +275,40 @@ vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libxml.so
 vendor/lib/libmdmdetect.so
 
+# Radio - IMS
+# Most of them, kanged from asus_msm8916-common
+bin/imscmservice|97fb1427a056db8f021ed10be5dd5f9bd9ec33c0
+bin/imsdatadaemon|716ff0379e2ce6f7f96f7cc6bebef51ef1972e62
+bin/imsqmidaemon|cc34733d74375a01cf80b6f7bd34ac2b2f5673d8
+bin/ims_rtp_daemon|4008aeae6f4c7ba381ede8accec44d454d6d608b
+-framework/imscmlibrary.jar|bd40c247a0df3612c0cb639b75b141e1d78aa3cd
+-vendor/app/ims/ims.apk|138de3a169d8c4703d9e5645abeb19e427b04909
+-vendor/app/imssettings/imssettings.apk|3020cdd3bc6d3c5bd147f2086fdd62fae108d81b
+vendor/lib64/lib-dplmedia.so|8b6b054601e6bc6b6e1fe940025e2613907310c4
+vendor/lib64/libimscamera_jni.so|dba0d0ac4c913d7228f390e263fcee652a4e9367
+vendor/lib64/lib-imscamera.so|07c10f3a9813fe339f1e9dec3f6af62e12454683
+vendor/lib64/lib-imsdpl.so|e2bf80b4a0929974c5f019b4b4be95223b2918da
+vendor/lib64/libimsmedia_jni.so|480190e1119c17e14909b9bd34e2624a4125cf59
+vendor/lib64/lib-imsqimf.so|e677e2ddbe99d6ddc7c4d9412271d1817c274f92
+vendor/lib64/lib-imsrcscmclient.so|f7c9fa279cbf33a08f4faff39bd13903a75c88ab
+vendor/lib64/lib-ims-rcscmjni.so|c9c415ab85676def0a5349b7298a788cdd484c4e
+vendor/lib64/lib-imsrcscmservice.so|b06d3ee72fff17e9576deb698a5017ad0372a4c2
+vendor/lib64/lib-imsrcscm.so|f70edb5f6aa3ce3fe61d3a7c0a5e6a61634186ec
+vendor/lib64/lib-imsrcs.so|f611ff4b7fd2e0d0ef6685a0fab46f161f0f1928
+vendor/lib64/lib-imsSDP.so|eab30f09f66f62d23bda7fca7f206f8f766a1cce
+vendor/lib64/lib-imss.so|573afd01c0ca579dd7cfd7f67d72ac89a21cba80
+vendor/lib64/lib-imsvt.so|af1a068df511ed318829efaabd48606f6f007c62
+vendor/lib64/lib-imsxml.so|4ddded34278d5bedc4f06c715c084fee5e1fea43
+vendor/lib64/libNimsWrap.so|bc0c25953edf7befcfff2aa8d4bb9ca205a2c223
+vendor/lib64/lib-rcsimssjni.so|0c472e84fdb1831492d374c1f6dd9fe5761d8c51
+vendor/lib64/lib-rcsjni.so|cf70f022dc69e598fbdb36cf9915703fc7d166ef
+vendor/lib64/lib-rtpcommon.so|d2e739de6b1b46d1bf911b1f0b5479f266abac2d
+vendor/lib64/lib-rtpcore.so|73efdff5296726c643a0b61deb6a243a44cde2cc
+vendor/lib64/lib-rtpdaemoninterface.so|a70bd049ff9a7534817842dfaec355b5a1601fcb
+vendor/lib64/lib-rtpsl.so|96900102f8bd299e18f1e23ce3a8b76eafa6b453
+vendor/lib64/libvoice-svc.so|736280909b469539c9bde86173c467a26610d094
+vendor/lib64/libvcel.so|9a39ecd85735fc0abded32c56af0427fac7e4117
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/lib64/libthermalclient.so
