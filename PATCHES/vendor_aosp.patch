@@ -1,0 +1,58 @@
+From 48682de39c24b03f02da261e9cda7e42125e8a17 Mon Sep 17 00:00:00 2001
+From: shrukul <shrukul99@gmail.com>
+Date: Sun, 12 Mar 2017 13:19:10 +0000
+Subject: [PATCH 1/1] Remove some apps to increase system space
+
+---
+ common.mk                      |  5 +----
+ prebuilt/common/apk/Android.mk | 10 ----------
+ 2 files changed, 1 insertion(+), 14 deletions(-)
+
+diff --git a/common.mk b/common.mk
+index 8121196..aee162e 100644
+--- a/common.mk
++++ b/common.mk
+@@ -121,10 +121,8 @@ PRODUCT_PACKAGES += \
+     Terminal \
+     PixelLauncher \
+     WallpaperPickerGoogle \
+-    Slimperience \
+     AEXPapers \
+-    OmniStyle \
+-    CalendarWidget
++    OmniStyle
+ 
+ # Include explicitly to work around Facelock issues
+ PRODUCT_PACKAGES += \
+@@ -221,7 +219,6 @@ PRODUCT_PACKAGES += \
+ 	LiveWallpapers \
+ 	LiveWallpapersPicker \
+         Eleven \
+-        Email \
+ 	OmniJaws
+ 
+ # Set cache location
+diff --git a/prebuilt/common/apk/Android.mk b/prebuilt/common/apk/Android.mk
+index 42165b5..089f32d 100644
+--- a/prebuilt/common/apk/Android.mk
++++ b/prebuilt/common/apk/Android.mk
+@@ -14,16 +14,6 @@
+ 
+ LOCAL_PATH:=$(call my-dir)
+ 
+-#Slimperience
+-
+-include $(CLEAR_VARS)
+-LOCAL_MODULE := Slimperience
+-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+-LOCAL_MODULE_CLASS := APPS
+-LOCAL_MODULE_TAGS := optional
+-LOCAL_CERTIFICATE := platform
+-include $(BUILD_PREBUILT)
+-
+ #Pixel Launcher
+ 
+ include $(CLEAR_VARS)
+-- 
+1.9.1
+
