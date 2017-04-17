@@ -25,3 +25,5 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/yu/tomato
 
 # Inherit from proprietary files
 -include vendor/yu/tomato/BoardConfigVendor.mk
+
+TARGET_SYSTEM_PROP += device/yu/tomato/system.prop
